@@ -3,20 +3,10 @@ import pandas as pd
 from pandas import DataFrame
 import os , sys
 import numpy as np
-import matplotlib.pyplot as plt
-
-# Append the system to the outer base directory
-current_dir = os.getcwd()
-outer_dir = os.path.dirname(current_dir)
-
-sys.path.append(outer_dir)
 
 from processing.cleaner import Cleaner
 from processing.loader import Logs
 from processing.transformations import Transformations
-
-# Append back to the current directory
-sys.path.append(current_dir)
 
 # The Automator class
 class Automator :
